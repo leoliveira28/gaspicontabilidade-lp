@@ -31,11 +31,11 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function SimpleThreeColumns() {
   return (
-    <Box p={8}
+    <Box p={['8', '4']}
     h={'100vh'}
     >
-    <Container maxW={'6xl'} mt={10}>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+    
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcDepartment} w={10} h={10} />}
           title={'Você sabe o quanto paga de impostos?'}
@@ -73,7 +73,6 @@ export default function SimpleThreeColumns() {
                 Simulador de impostos
               </Button>
             </Center>
-      </Container>
     </Box>
   );
 }

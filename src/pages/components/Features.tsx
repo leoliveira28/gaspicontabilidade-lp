@@ -11,6 +11,7 @@ import {
   } from '@chakra-ui/react';
   import { CheckIcon } from '@chakra-ui/icons';
 import React from 'react';
+import ChoseUs from './ChoseUs';
   
   // Replace test data with your own
   const features = 
@@ -58,10 +59,10 @@ import React from 'react';
   
   export default function GridListWithHeading() {
     return (
-      <Box p={4}
-      
-      h={'100vh'}
-      bg='#eeeeee'
+      <><Box p={1}
+        h={{base: 'full', md:'100vh', lg:'100vh'}}
+        mb='10px'
+        bg='#eeeeee'
       >
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
           <Heading fontSize={'3xl'}>Gaspi Contabilidade</Heading>
@@ -71,7 +72,6 @@ import React from 'react';
             como abertura de empresa, assessoria contábil, assessoria fiscal e trabalhista.
           </Text>
         </Stack>
-  
         <Container maxW={'6xl'} mt={10}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
             {features.map((feature) => (
@@ -87,6 +87,9 @@ import React from 'react';
             ))}
           </SimpleGrid>
         </Container>
-      </Box>
+   
+       
+
+        </Box></>
     );
   }

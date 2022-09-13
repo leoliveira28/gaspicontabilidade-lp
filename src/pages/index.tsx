@@ -9,7 +9,9 @@ const Home: NextPage = () => {
     <Box>
       <Hero />
       <Features />
+
       <ChoseUs />
+
     </Box>
   )
 }
