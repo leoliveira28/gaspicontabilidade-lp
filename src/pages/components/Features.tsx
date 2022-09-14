@@ -72,7 +72,7 @@ import ChoseUs from './ChoseUs';
             como abertura de empresa, assessoria contábil, assessoria fiscal e trabalhista.
           </Text>
         </Stack>
-        <Container maxW={'6xl'} mt={10}>
+        <Container maxW={'6xl'} mt={20} mb={10}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
             {features.map((feature) => (
               <HStack key={feature.id} align={'top'}>

@@ -12,7 +12,7 @@ import {
       <Flex
         w={'full'}
         h={'100vh'}
-        backgroundImage={'url(https://img.freepik.com/fotos-gratis/close-up-do-teclado-e-vidros-com-executivos-fundo_1098-3635.jpg?w=1380&t=st=1662850971~exp=1662851571~hmac=593da7526c41d586d5f09dd37f10b0e58efb2659f8d9ba0414b8bd795fb38447)'}
+        backgroundImage={'url(https://maisempresas.net.br/wp-content/uploads/2022/07/cropped-balance-865091_1920.jpg)'}
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>
         <VStack
@@ -27,7 +27,13 @@ import {
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
               Somos um escritório de contabilidade completo a serviço do seu negócio.
-              Venha e experimente a qualidade do atendimento da Gaspi Contabilidade.
+            </Text>
+            <Text
+              color={'green.300'}
+              fontWeight={700}
+              lineHeight={1.2}
+              fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
+              Garantimos nosso preço até 50% mais barato que outros escritórios.
             </Text>
             <Text
               color={'white'}
