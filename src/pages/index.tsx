@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import ChoseUs from './components/ChoseUs'
+import Testimonials from './components/Testimonials'
 
 const Home: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
       <Features />
 
       <ChoseUs />
+      <Testimonials />
 
     </Box>
   )

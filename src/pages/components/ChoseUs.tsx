@@ -34,7 +34,7 @@ export default function SimpleThreeColumns() {
     <Box p={['8', '4']}
     h={{base: 'full', md:'100vh', lg:'100vh'}}
     >
-      <Container maxW={'6xl'} mb={10}>
+      <Container maxW={'6xl'}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcDepartment} w={10} h={10} />}
