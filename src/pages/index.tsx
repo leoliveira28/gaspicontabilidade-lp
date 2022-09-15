@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import ChoseUs from './components/ChoseUs'
 import Testimonials from './components/Testimonials'
+import Contact from './components/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
 
       <ChoseUs />
       <Testimonials />
-
+    <Contact />
     </Box>
   )
 }
