@@ -5,6 +5,7 @@ import {
     Text,
     VStack,
     useBreakpointValue,
+    Link,
   } from '@chakra-ui/react';
   
   export default function WithBackgroundImage() {
@@ -26,14 +27,14 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Somos um escritório de contabilidade completo a serviço do seu negócio.
+              Somos uma assessoria de contabilidade completa a serviço do seu negócio.
             </Text>
             <Text
               color={'green.300'}
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Garantimos nosso preço até 50% mais barato que outros escritórios.
+              Economize até 50% com a sua contabilidade.
             </Text>
             <Text
               color={'white'}
@@ -43,7 +44,8 @@ import {
               Fazemos a transferência da sua contabilidade sem complicações.
             </Text>
             <Stack direction={'row'}>
-              <Button
+              
+              <Button as='a' href='#contact'
                 bg={'blue.400'}
                 rounded={'full'}
                 color={'white'}

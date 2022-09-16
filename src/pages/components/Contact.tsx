@@ -2,7 +2,7 @@ import { Box, Container, FormControl, FormLabel, Heading, Input, Text, Stack, Bu
 
 export default function Contact() {
   return (
-    <Box p={["8", "4"]} h={{ base: "full", md: "100vh", lg: "100vh" }}>
+    <Box id={'contact'} p={["8", "4"]} h={{ base: "full", md: "100vh", lg: "100vh" }}>
         <Container maxW={'lg'} py={16} as={Stack} spacing={10}>
         <Heading>
             Simulador de impostos
@@ -21,10 +21,9 @@ export default function Contact() {
         <Input type="email" placeholder="E-mail" />
         <FormLabel>CEP</FormLabel>
         <Input placeholder="CEP" />
-        <Button colorScheme={'blue'}>Enviar</Button>
+        <Button colorScheme={'blue'}>Simular</Button>
         </Stack>
       </FormControl>
-
       </Container>
     </Box>
   );

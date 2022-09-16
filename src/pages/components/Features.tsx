@@ -18,17 +18,17 @@ import ChoseUs from './ChoseUs';
   [  {
       id: 1,
       title: 'Assessoria contabil',
-      text: 'Relatórios contábeis mensais para leh ajudar com foco gerencial para lhe ajudar na tomada de decisões',
+      text: 'Relatórios contábeis mensais com foco gerencial para te ajudar na tomada de decisões',
     },
     {
         id: 2,
         title: 'Assessoria tributária',
-        text: 'Analisamos o melhor regime tributário para sua empresa ter a maior eficiência tributária possível',
+        text: 'Analisamos o melhor regime tributário para sua empresa ter a maior redução de impostos possíveis',
       },
       {
         id: 3,
         title: 'Assessoria trabalhista',
-        text: 'Acompanhamos de perto de negócio com foco na redução de riscos trabalhistas e previdenciários',
+        text: 'Acompanhamos de perto seu negócio com foco na redução de riscos trabalhistas e previdenciários',
       },
       {
         id: 4,
@@ -53,7 +53,7 @@ import ChoseUs from './ChoseUs';
           {
             id: 8,
             title: 'Regularidade fiscal',
-            text: 'Analisamos os dados gerais dos clientes verificando a existência de débitos junto aos órgãos federais, estaduais e municipais.',
+            text: 'Analisamos todos os meses os dados gerais dos clientes verificando a existência de débitos junto aos órgãos federais, estaduais e municipais.',
           },
   ]
   
@@ -67,7 +67,7 @@ import ChoseUs from './ChoseUs';
         <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
           <Heading fontSize={'3xl'}>Gaspi Contabilidade</Heading>
           <Text color={'gray.600'} fontSize={'xl'}>
-            Nosso escritório de contabilidade em São José do Rio Preto e através da internet
+            Estamos em São José do Rio Preto e através da internet
             oferecemos diversos serviços para nossos clientes,
             como abertura de empresa, assessoria contábil, assessoria fiscal e trabalhista.
           </Text>

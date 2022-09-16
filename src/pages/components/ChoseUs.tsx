@@ -40,14 +40,14 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcDepartment} w={10} h={10} />}
           title={'Você sabe o quanto paga de impostos?'}
           text={
-            'Além de entender como funciona seus impostos, você confere qual o melhor tipo de categoria melhor lhe atenderá. CLT ou PJ? Confira nosso simulador!'
+            'Além de entender como funciona seus impostos, você confere qual o melhor enquadramento vai te atender. Confira nosso simulador!'
           }
         />
         <Feature
           icon={<Icon as={FcDocument} w={10} h={10} />}
           title={'Indicação premiada'}
           text={
-            'Faça uma indicação e ganhe até 50% de desconto na sua mensalidade!'
+            'Faça uma indicação e ganhe 50% de desconto na sua mensalidade!'
           }
         />
         <Feature
@@ -61,12 +61,12 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcAssistant} w={10} h={10} />}
           title={'Atendimento'}
           text={
-            'Entregamos o melhor que um escritório de contabilidade pode oferecer'
+            'Entregamos o melhor que um escritório de contabilidade pode oferecer. Atendimento via WhatsApp em até 30 minutos com uma linguagem desconplicada para você focar no que realmente te interessa.'
           } />
       </SimpleGrid>
       </Container>
       <Center mt='50px'>
-              <Button
+              <Button as='a' href='#contact'
                 bg={'blue.500'}
                 rounded={'full'}
                 color={'white'}
