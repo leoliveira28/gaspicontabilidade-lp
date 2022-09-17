@@ -5,7 +5,7 @@ import {
     Text,
     VStack,
     useBreakpointValue,
-    Link,
+  
   } from '@chakra-ui/react';
   
   export default function WithBackgroundImage() {
@@ -44,7 +44,6 @@ import {
               Fazemos a transferência da sua contabilidade sem complicações.
             </Text>
             <Stack direction={'row'}>
-              
               <Button as='a' href='#contact'
                 bg={'blue.400'}
                 rounded={'full'}

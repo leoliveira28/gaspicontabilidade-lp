@@ -11,7 +11,6 @@ import {
   } from '@chakra-ui/react';
   import { CheckIcon } from '@chakra-ui/icons';
 import React from 'react';
-import ChoseUs from './ChoseUs';
   
   // Replace test data with your own
   const features = 
@@ -59,8 +58,8 @@ import ChoseUs from './ChoseUs';
   
   export default function GridListWithHeading() {
     return (
-      <><Box p={1}
-        h={{base: 'full', md:'100vh', lg:'100vh'}}
+      <Box p={8}
+        //h={{base: 'full', md:'100vh', lg:'100vh'}}
         mb='10px'
         bg='#eeeeee'
       >
@@ -87,9 +86,6 @@ import ChoseUs from './ChoseUs';
             ))}
           </SimpleGrid>
         </Container>
-   
-       
-
-        </Box></>
+        </Box>
     );
   }

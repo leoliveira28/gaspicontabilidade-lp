@@ -31,8 +31,8 @@ const Feature = ({ title, text, icon }: FeatureProps) => {
 
 export default function SimpleThreeColumns() {
   return (
-    <Box p={['8', '4']}
-    h={{base: 'full', md:'100vh', lg:'100vh'}}
+    <Box p={'4'}
+    //h={{base: 'full', md:'100vh', lg:'100vh'}}
     >
       <Container maxW={'6xl'}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>

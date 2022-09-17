@@ -10,9 +10,12 @@ const Home: NextPage = () => {
   return (
     <Box>
       <Hero />
+      <Box>
       <Features />
-
+      </Box>
+      <Box>
       <ChoseUs />
+      </Box>
       <Testimonials />
     <Contact />
     </Box>
