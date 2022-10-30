@@ -47,7 +47,7 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcDocument} w={10} h={10} />}
           title={'Indicação premiada'}
           text={
-            'Faça uma indicação e ganhe 50% de desconto na sua mensalidade!'
+            'Faça uma indicação e ganhe 50% de desconto na proxima mensalidade!'
           }
         />
         <Feature
@@ -61,7 +61,7 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcAssistant} w={10} h={10} />}
           title={'Atendimento'}
           text={
-            'Entregamos o melhor que um escritório de contabilidade pode oferecer. Atendimento via WhatsApp em até 30 minutos com uma linguagem desconplicada para você focar no que realmente te interessa.'
+            'Entregamos o melhor que um escritório de contabilidade pode oferecer. Atendimento via WhatsApp em até 30 minutos com uma linguagem descomplicada para você focar no que realmente te interessa.'
           } />
       </SimpleGrid>
       </Container>

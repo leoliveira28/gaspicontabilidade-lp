@@ -34,7 +34,7 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              Economize até 50% com a sua contabilidade.
+              Economize até 50% em honorários.
             </Text>
             <Text
               color={'white'}
