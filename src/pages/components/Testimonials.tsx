@@ -7,7 +7,6 @@ import {
   Stack,
   Container,
   Avatar,
-  useColorModeValue,
 } from '@chakra-ui/react';
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -17,7 +16,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={'gray.300'}
       boxShadow={'lg'}
       p={8}
       rounded={'xl'}
@@ -33,7 +32,7 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
         borderRightWidth: 16,
         borderTop: 'solid',
         borderTopWidth: 16,
-        borderTopColor: useColorModeValue('white', 'gray.800'),
+        borderTopColor: 'gray.300',
         pos: 'absolute',
         bottom: '-16px',
         left: '50%',
@@ -56,7 +55,7 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
     <Text
       textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
+      color={'gray.400'}
       fontSize={'sm'}>
       {children}
     </Text>
@@ -77,7 +76,7 @@ const TestimonialAvatar = ({
       <Avatar src={src} mb={2} />
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
+        <Text fontSize={'sm'} color={'gray.400'}>
           {title}
         </Text>
       </Stack>
@@ -87,7 +86,7 @@ const TestimonialAvatar = ({
 
 export default function WithSpeechBubbles() {
   return (
-    <Box h={{base: 'full', md:'100vh', lg:'100vh'}} bg={useColorModeValue('gray.100', 'blue.700')}>
+    <Box h={{base: 'full', md:'100vh', lg:'100vh'}} bg={'gray.200'} borderRadius={'50px'}>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={10}>
         <Stack spacing={0} align={'center'}>
           <Heading>Nossos clientes falam</Heading>

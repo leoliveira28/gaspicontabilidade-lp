@@ -9,6 +9,7 @@ export default function Contact() {
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
   const [cep, setCep] = useState('')
+  const [cnpj, setCNPJ] = useState('')
 
     const handleSubmit = async (e) => {
       e.preventDefault();
@@ -18,16 +19,18 @@ export default function Contact() {
         name,
         phone,
         email,
-        cep
+        cep,
+        cnpj
       );
       setName('')
       setPhone('')
       setEmail('')
       setCep('')
+      setCNPJ('')
 
       };
   // HUBSPORT SUBMISSION FORM DATA 
-    const submitHubspotForm = async (name, phone, email, cep) => {
+    const submitHubspotForm = async (name, phone, email, cep, cnpj) => {
       const portalId = "23158671";
       const formGuid = "f8a569f0-dd6b-4037-af83-e290a41c5c59";
       const config = {
@@ -57,6 +60,10 @@ export default function Contact() {
             {
               name: "cep",
               value: cep,
+            },
+            {
+              name: "cnpj",
+              value: cnpj,
             },
           ],
         },
@@ -101,6 +108,12 @@ export default function Contact() {
         value={cep}
         onChange={(e) => {
           setCep(e.target.value)
+         }}/>
+         <FormLabel>CNPJ</FormLabel>
+        <Input placeholder="CNPJ" 
+        value={cnpj}
+        onChange={(e) => {
+          setCNPJ(e.target.value)
          }}/>
         <Button colorScheme={'blue'} type={'submit'}>Simular</Button>
         </Stack>

@@ -6,12 +6,14 @@ import ChoseUs from './components/ChoseUs'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import { ToastContainer } from "react-toastify";
+import Navbar from './components/Navbar'
 
 const Home: NextPage = () => {
   
   return (
     <Box>
       <ToastContainer />
+      <Navbar />
       <Hero />
       <Box>
       <Features />

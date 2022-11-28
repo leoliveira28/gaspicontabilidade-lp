@@ -5,10 +5,24 @@ import {
     Text,
     VStack,
     useBreakpointValue,
+    HStack,
   
   } from '@chakra-ui/react';
-  
+import { useEffect, useState } from 'react';
   export default function WithBackgroundImage() {
+  
+  const [triggerOne, setTriggerOne] = useState(false)
+  const [triggerTwo, setTriggerTwo] = useState(false)
+  const [triggerThree, setTriggerThree] = useState(false)
+  const [triggerEffect, setTriggerEffect] = useState(false)
+
+  
+  useEffect(() => {
+    setTimeout(() => {
+      setTriggerEffect(!triggerEffect)
+      }, 2000)
+  },[triggerEffect])
+    
     return (
       <Flex
         w={'full'}
@@ -19,9 +33,10 @@ import {
         <VStack
           w={'full'}
           justify={'center'}
+          align={'flex-start'}
           px={useBreakpointValue({ base: 4, md: 8 })}
           bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-          <Stack maxW={'2xl'} align={'flex-start'} spacing={6}>
+          <Stack maxW={'2xl'}  spacing={5}>
             <Text
               color={'white'}
               fontWeight={700}
@@ -29,6 +44,34 @@ import {
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
               Somos uma assessoria de contabilidade completa a serviço do seu negócio.
             </Text>
+            <HStack>
+            <Text
+            position={'absolute'}
+            color={'gray.200'}
+            transition={'all 0.2s ease-in-out'}
+            opacity="0"
+
+            >
+              texto um
+            </Text>
+            <Text
+            transition={'all 0.2s ease-in-out'}
+            position={'absolute'}
+           color={'gray.200'}
+            opacity="0"
+
+           >
+              texto dois
+            </Text>
+            <Text
+         transition={'all 0.3s ease-in-out'}
+            position={'absolute'}
+            color={'gray.200'}
+             opacity="0"
+            >
+              texto tres
+            </Text>
+            </HStack>
             <Text
               color={'green.300'}
               fontWeight={700}
