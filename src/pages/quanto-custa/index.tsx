@@ -77,7 +77,7 @@ const QuantoCusta = () => {
         <>
         <Navbar />
         <Box id={'contact'} p={["8", "4"]} h={{ base: "full", md: "100vh", lg: "100vh" }} >
-            <Container maxW={'lg'} py={16} as={Stack} spacing={10}>
+            <Container maxW={'lg'} py={16} as={Stack} spacing={10} alignItems="center" >
                 <Heading>
                     Receba seu Orçamento
                 </Heading>
@@ -85,7 +85,7 @@ const QuantoCusta = () => {
                     Preencha as informações abaixo
                 </Text>
                 <form onSubmit={handleSubmit}>
-                    <FormControl isRequired background='gray.100' p='20px' borderRadius='20px'>
+                    <FormControl isRequired background='gray.100' p='20px' borderRadius='20px' w='370px'>
                         <Stack spacing={5}>
                             <FormLabel>Quantos Funcionarios</FormLabel>
                             <Input

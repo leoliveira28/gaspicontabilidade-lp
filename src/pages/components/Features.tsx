@@ -74,15 +74,15 @@ import React from 'react';
         <Container maxW={'6xl'} mt={20} mb={10}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
             {features.map((feature) => (
-              <HStack key={feature.id} align={'top'}>
-                <Box color={'green.400'} px={2}>
-                  <Icon as={CheckIcon} />
-                </Box>
-                <VStack align={'start'}>
-                  <Text fontWeight={600}>{feature.title}</Text>
-                  <Text color={'gray.600'}>{feature.text}</Text>
-                </VStack>
-              </HStack>
+                <HStack key={feature.id} align={'top'}>
+                  <VStack align={'start'}>
+                  <Box color={'green.400'} px={2} ml={'60px'}>
+                <Icon as={CheckIcon} />
+              </Box>
+                    <Text fontWeight={600}>{feature.title}</Text>
+                    <Text color={'gray.600'}>{feature.text}</Text>
+                  </VStack>
+                </HStack>
             ))}
           </SimpleGrid>
         </Container>

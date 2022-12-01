@@ -49,7 +49,9 @@ import {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} justifyContent={'center'} align={'center'}>
                  <Box width='100px'>
-            <Image src='/logo-sem-fundo.png' alt='logo' />
+                  <Link href={'/'}>
+                  <Image src='/logo-sem-fundo.png' alt='logo' />
+                  </Link>
             </Box>
 
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
