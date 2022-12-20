@@ -47,7 +47,7 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} justifyContent={'center'} align={'center'}>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-around' }} align={'center'}>
                  <Box width='100px'>
                   <Link href={'/'}>
                   <Image src='/logo-sem-fundo.png' alt='logo' />
