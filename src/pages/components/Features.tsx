@@ -8,6 +8,7 @@ import {
     Stack,
     HStack,
     VStack,
+    Flex,
   } from '@chakra-ui/react';
   import { CheckIcon } from '@chakra-ui/icons';
   import { FaCalculator, FaRegFileAlt, FaUserCog, FaUserFriends, FaFolderOpen, FaUserCheck } from 'react-icons/fa'
@@ -84,12 +85,12 @@ import React from 'react';
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
             {features.map((feature) => (
                 <HStack key={feature.id} align={'top'}>
-                  <VStack align={'start'}>
-                  <Box color={'green.400'} px={2} ml={'60px'}>
+                  <VStack align={'center'}>
+                  <Flex color={'green.400'} px={2} ml={'20px'} align={'center'}>
                 <Icon as={feature.icon} fontSize={26}/>
-              </Box>
+              </Flex>
                     <Text fontWeight={600}>{feature.title}</Text>
-                    <Text color={'gray.600'}>{feature.text}</Text>
+                    <Text color={'gray.600'} textAlign={'center'}>{feature.text}</Text>
                   </VStack>
                 </HStack>
             ))}

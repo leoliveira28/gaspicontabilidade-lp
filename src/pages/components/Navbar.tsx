@@ -37,7 +37,9 @@ import {
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
-            display={{ base: 'flex', md: 'none' }}>
+            display={{ base: 'flex', md: 'none' }}
+            gap={'30px'}
+            >
             <IconButton
               onClick={onToggle}
               icon={
@@ -46,13 +48,26 @@ import {
               variant={'ghost'}
               aria-label={'Toggle Navigation'}
             />
-          </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-around' }} align={'center'}>
-                 <Box width='100px'>
+            <Flex width='100px'>
                   <Link href={'/'}>
                   <Image src='/logo-sem-fundo.png' alt='logo' />
                   </Link>
-            </Box>
+                 </Flex>
+                 <Flex display={'flex'} align={'center'} marginLeft={'20px'} >
+         
+<Link href={'/quanto-custa'}>
+  Quanto Custa?
+</Link>
+</Flex>
+
+          </Flex>
+          <Flex display={{ base: 'none', md: 'flex'}} flex={{ base: 1 }} justify={{ base: 'center', md: 'space-around' }} align={'center'}>
+                 <Flex width='100px'>
+                  <Link href={'/'}>
+                  <Image src='/logo-sem-fundo.png' alt='logo' />
+                  </Link>
+                 
+            </Flex>
 
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
@@ -96,14 +111,14 @@ import {
     
   const MobileNav = () => {
     return (
-      <Stack
+      <><Stack
         bg={useColorModeValue('white', 'gray.800')}
         p={4}
         display={{ md: 'none' }}>
-        {NAV_ITEMS.map((navItem) => (
-          <MobileNavItem key={navItem.label} {...navItem} />
-        ))}
-      </Stack>
+          {NAV_ITEMS.map((navItem) => (
+            <MobileNavItem key={navItem.label} {...navItem} />
+          ))}
+        </Stack></>
     );
   };
   
